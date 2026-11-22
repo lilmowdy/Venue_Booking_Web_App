@@ -53,7 +53,7 @@ def init_db():
                     ("Mekatilili Hall","Mvita", 120, 18000),
                     ("Ampitheatre","Mvita", 250, 32000),
                     ("Mazrui","Mvita", 35, 8500),
-                    ("Jitume Hub","Mvita", 150, 24000),
+                    ("Jitume Lab","Mvita", 150, 24000),
                 ],
             )
         conn.commit()
