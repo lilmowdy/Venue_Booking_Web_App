@@ -1,2 +1,8 @@
 venues.db
 **/*.db
+venv/
+.venv/
+.env/
+env/
+__pycache__/
+

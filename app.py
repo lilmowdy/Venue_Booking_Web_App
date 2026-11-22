@@ -53,11 +53,12 @@ def init_db():
                     ("Mekatilili Hall","Mvita", 120, 18000),
                     ("Ampitheatre","Mvita", 250, 32000),
                     ("Mazrui","Mvita", 35, 8500),
-                    ("Jitume Hub","Mvita", 180, 24000),
+                    ("Jitume Hub","Mvita", 150, 24000),
                 ],
             )
         conn.commit()
 
+init_db()
 
 @app.route("/")
 def index():
@@ -137,5 +138,4 @@ def cancel_booking(booking_id):
 
 
 if __name__ == "__main__":
-    init_db()
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(debug=True)
