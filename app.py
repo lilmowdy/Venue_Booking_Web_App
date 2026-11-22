@@ -138,4 +138,5 @@ def cancel_booking(booking_id):
 
 
 if __name__ == "__main__":
+    debug_enabled = os.environ.get("FLASK_DEBUG","1").lower() in ("1", "true", "yes")
     app.run(debug=True)
