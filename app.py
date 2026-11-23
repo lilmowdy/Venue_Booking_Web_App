@@ -50,10 +50,10 @@ def init_db():
             conn.executemany(
                 "INSERT INTO venues (name, location, capacity, rate_per_day) VALUES (?, ?, ?, ?)",
                 [
-                    ("Mekatilili Hall","Mvita", 120, 18000),
-                    ("Ampitheatre","Mvita", 250, 32000),
-                    ("Mazrui","Mvita", 35, 8500),
-                    ("Jitume Lab","Mvita", 150, 24000),
+                    ("Mekatilili Hall","SPH", 120, 18000),
+                    ("Ampitheatre","SPH", 250, 32000),
+                    ("Mazrui","SPH", 35, 8500),
+                    ("Jitume Lab","SPH", 150, 24000),
                 ],
             )
         conn.commit()
